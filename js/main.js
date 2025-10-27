@@ -24,17 +24,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Form handling
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        // Form submission is handled by Formspree
-        // This is just for any additional client-side validation or effects
-        const submitButton = this.querySelector('.btn-submit');
-        submitButton.textContent = 'Sending...';
-        submitButton.disabled = true;
-    });
-}
 
 // Animate elements on scroll
 const observerOptions = {
