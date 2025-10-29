@@ -73,7 +73,13 @@
             font-size: 2.5em;
             font-weight: 600;
             line-height: 1.1;
-            margin-bottom: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 2em;
         }
 
         h2 {
@@ -95,7 +101,46 @@
         }
 
         .section-title:first-of-type {
-            margin-top: 0;
+            margin-top: 2em;
+        }
+
+        /* Quick Facts */
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5em;
+            margin-bottom: 3em;
+            padding: 2em;
+            background: #f9f9f9;
+            border-radius: 4px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .fact {
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        .fact-number {
+            font-size: 2em;
+            font-weight: 700;
+            color: #0066cc;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .fact-label {
+            font-size: 0.85em;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.3em;
+        }
+
+        @media (max-width: 480px) {
+            .facts-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Content styling */
@@ -136,6 +181,27 @@
             color: #666;
         }
 
+        .speaking-list li {
+            padding-left: 0;
+            margin-bottom: 1.5em;
+        }
+
+        .speaking-list li:before {
+            display: none;
+        }
+
+        .speaking-list strong {
+            display: block;
+            color: #1a1a1a;
+            margin-bottom: 0.3em;
+        }
+
+        .speaking-list .description {
+            color: #666;
+            font-size: 0.95em;
+            font-style: italic;
+        }
+
         .media-list li {
             padding-left: 0;
             margin-bottom: 1.2em;
@@ -172,11 +238,10 @@
             margin: 1.5em 0;
         }
 
-        .resource-links a {
-            display: inline-block;
-            margin-right: 2em;
-            margin-bottom: 0.5em;
+        .resource-links p {
+            color: #666;
             font-size: 0.95em;
+            margin-bottom: 0.5em;
         }
 
         /* Contact */
@@ -201,6 +266,43 @@
             font-weight: 500;
         }
 
+        /* Timeline */
+        .timeline {
+            border-left: 2px solid #e5e5e5;
+            padding-left: 2em;
+            margin: 2em 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2em;
+        }
+
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: -2.5em;
+            top: 0.3em;
+            width: 10px;
+            height: 10px;
+            background: #0066cc;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 2px #e5e5e5;
+        }
+
+        .timeline-year {
+            font-weight: 700;
+            color: #0066cc;
+            font-size: 0.9em;
+            margin-bottom: 0.3em;
+        }
+
+        .timeline-content {
+            color: #333;
+            font-size: 0.95em;
+        }
+
         /* Emphasis */
         em {
             font-style: italic;
@@ -208,6 +310,11 @@
 
         strong {
             font-weight: 600;
+        }
+
+        .highlight {
+            background: #fff4cc;
+            padding: 0 0.2em;
         }
 
         /* Mobile responsive */
@@ -228,10 +335,16 @@
                 padding: 1.2em;
             }
 
-            .resource-links a {
-                display: block;
-                margin-right: 0;
-                margin-bottom: 0.8em;
+            .timeline {
+                padding-left: 1.5em;
+            }
+
+            .timeline-item:before {
+                left: -2em;
+            }
+
+            .facts-grid {
+                padding: 1.5em;
             }
         }
     </style>
@@ -244,74 +357,148 @@
         </nav>
 
         <h1>About Jason Trost</h1>
+        <p class="subtitle">The prediction market veteran you've probably never heard of.</p>
+
+        <!-- Quick Facts -->
+        <div class="facts-grid">
+            <div class="fact">
+                <span class="fact-number">2008</span>
+                <span class="fact-label">Founded Smarkets</span>
+            </div>
+            <div class="fact">
+                <span class="fact-number">18 Years</span>
+                <span class="fact-label">Building Markets</span>
+            </div>
+            <div class="fact">
+                <span class="fact-number">£Billions</span>
+                <span class="fact-label">Volume Processed</span>
+            </div>
+            <div class="fact">
+                <span class="fact-number">200,000+</span>
+                <span class="fact-label">Active Customers</span>
+            </div>
+        </div>
 
         <!-- Short Bio -->
-        <h2 class="section-title">Short Bio</h2>
+        <h2 class="section-title">Short Bio (For Press)</h2>
         <div class="bio-box">
-            <p>Jason Trost is the founder and CEO of Smarkets, one of the world's largest prediction markets. Founded in 2008, Smarkets processes billions in annual volume across 200,000+ customers. Prior to Smarkets, Jason worked in derivatives trading at UBS. He hosts "The Business of Betting" podcast and has been building prediction markets for 18 years.</p>
+            <p>Jason Trost is the founder and CEO of Smarkets, one of the world's largest prediction markets and betting exchanges. Founded in 2008 when he left UBS to challenge Betfair's monopoly, Smarkets now processes billions in annual volume across 200,000+ customers. Trost has spent 18 years building prediction market infrastructure—longer than almost anyone in the space. He hosts "The Business of Betting" podcast and splits his time between London and Los Angeles.</p>
         </div>
 
-        <!-- Long Bio -->
-        <h2 class="section-title">Long Bio</h2>
-        <p>Jason Trost founded Smarkets in 2008 after leaving UBS, where he worked in derivatives trading. Over 18 years, he's built Smarkets into one of Europe's largest betting exchanges, processing billions in annual volume with over 200,000 customers.</p>
+        <!-- Extended Bio -->
+        <h2 class="section-title">The Full Story</h2>
 
-        <p>Smarkets was one of the first companies to challenge Betfair's dominance by offering lower commissions (2% vs 5%) and cleaner market design. The company survived seven years of growth challenges before breaking through, driven by what Trost calls "extreme hubris with extreme work ethic."</p>
+        <p><strong>Everyone thinks prediction markets just became a thing.</strong> Kalshi launched in 2020. Polymarket in 2020. The media discovered them in 2024. But I've been here since 2008, watching hype cycles come and go, learning what actually works.</p>
 
-        <p>Today, Smarkets operates across the UK and Ireland with offices in London and Los Angeles. The platform has processed billions in volume and weathered multiple prediction market hype cycles.</p>
+        <p>I founded Smarkets at 26 after quitting my derivatives trading job at UBS. The idea was simple: Betfair was charging 5% commission and had terrible UX. We could do 2% with better design. Everyone said we were crazy to challenge a monopoly. They were probably right.</p>
 
-        <p>Trost hosts "The Business of Betting" podcast, where he interviews founders and operators in the betting and prediction market space. He lives in London with his wife Astrid and their two children.</p>
+        <p>The first seven years nearly killed us. We burned through millions, rebuilt the platform three times, and came close to shutting down more than once. What kept us going was what I call "extreme hubris with extreme work ethic"—the dangerous combination of believing you're right when everyone says you're wrong, and working obsessively to prove it.</p>
 
-        <!-- Media Kit -->
-        <h2 class="section-title">Media Kit</h2>
-        <div class="resource-links">
-            <a href="#" onclick="alert('Headshot link placeholder - please update with actual URL'); return false;">Download Headshot (High-res)</a>
-            <a href="#" onclick="alert('Company logo link placeholder - please update with actual URL'); return false;">Smarkets Logo</a>
-            <a href="#" onclick="alert('Fact sheet link placeholder - please update with actual URL'); return false;">Fact Sheet (PDF)</a>
+        <p>In 2015, things clicked. We'd figured out the hardest problem in prediction markets: <span class="highlight">liquidity</span>. Not by hoping users would provide it (they won't), but by running our own trading desk to seed markets. Today, Smarkets processes billions in volume annually across sports, politics, and entertainment markets.</p>
+
+        <p>I've watched this space long enough to see patterns. The current boom feels different—real money, real regulation, real institutional interest. But I've also seen enough cycles to stay cautiously optimistic. Prediction markets are hard. Most will fail. The winners will be those who understand that <strong>market design beats marketing</strong> and <strong>liquidity beats everything</strong>.</p>
+
+        <!-- Timeline -->
+        <h2 class="section-title">The Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">2008</div>
+                <div class="timeline-content">Quit UBS to found Smarkets. Goal: Beat Betfair with 2% commission.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2010</div>
+                <div class="timeline-content">First platform launch. Discovered building markets is harder than trading them.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2012</div>
+                <div class="timeline-content">Raised Series A. Rebuilt entire platform from scratch.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2015</div>
+                <div class="timeline-content">Breakthrough: Launched proprietary trading desk to seed liquidity. Game changer.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2016</div>
+                <div class="timeline-content">Brexit and Trump elections. Prediction markets enter mainstream consciousness.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2020</div>
+                <div class="timeline-content">Pandemic surge. Smarkets hits record volumes. New competitors emerge.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2022</div>
+                <div class="timeline-content">Opened Los Angeles office. Began US market strategy (take two).</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2024</div>
+                <div class="timeline-content">18 years in. Watching the fourth prediction market hype cycle. This one might stick.</div>
+            </div>
         </div>
 
-        <!-- Selected Appearances -->
-        <h2 class="section-title">Selected Appearances</h2>
-        <ul class="media-list">
-            <li>
-                <strong>"The Future of Prediction Markets"</strong>
-                <span class="source">Odd Lots Podcast, 2024</span>
-            </li>
-            <li>
-                <strong>"How Smarkets Survived 18 Years"</strong>
-                <span class="source">TechCrunch, 2024</span>
-            </li>
-            <li>
-                <strong>Featured Coverage</strong>
-                <span class="source">Bloomberg, Financial Times, The Information, Reuters</span>
-            </li>
-            <li>
-                <strong>Keynote: "Building Liquidity from Zero"</strong>
-                <span class="source">Betting on Sports America Conference, 2024</span>
-            </li>
-            <li>
-                <strong>"The Business of Betting" Podcast</strong>
-                <span class="source">Host - 50+ episodes with industry leaders</span>
-            </li>
+        <!-- What I've Learned -->
+        <h2 class="section-title">Hard-Won Lessons</h2>
+        <ul>
+            <li><strong>Liquidity is everything.</strong> Without it, you're just a website with good intentions.</li>
+            <li><strong>Market makers > market takers.</strong> We run our own trading desk because users won't provide liquidity.</li>
+            <li><strong>2% beats 5%.</strong> Lower commissions drive volume. We proved this against Betfair.</li>
+            <li><strong>Politics gets press, sports makes money.</strong> One is marketing, the other is business.</li>
+            <li><strong>Regulation is a moat, not a barrier.</strong> Getting licensed filters out the tourists.</li>
+            <li><strong>The US is different.</strong> What works in Europe doesn't translate. I learned this the hard way.</li>
+            <li><strong>Prediction markets ≠ betting.</strong> Similar mechanics, completely different user psychology.</li>
+            <li><strong>Everyone's an expert in a bull market.</strong> The real test is surviving the winters.</li>
         </ul>
-
-        <p style="font-size: 0.95em; color: #666;">Note: Specific appearances to be updated with actual links and dates.</p>
 
         <!-- Speaking Topics -->
         <h2 class="section-title">Speaking Topics</h2>
-        <ul>
-            <li>The 18-year journey building prediction markets</li>
-            <li>Market design: What actually creates liquidity</li>
-            <li>Competing with incumbents (lessons from taking on Betfair)</li>
-            <li>The prediction market hype cycle: What's different this time</li>
-            <li>Building regulated marketplaces</li>
-            <li>The intersection of betting, prediction markets, and finance</li>
+        <ul class="speaking-list">
+            <li>
+                <strong>The 18-Year Marathon: Building Prediction Markets Before It Was Cool</strong>
+                <span class="description">From zero to billions—lessons from building through multiple hype cycles</span>
+            </li>
+            <li>
+                <strong>Liquidity Is Everything: How Markets Actually Work</strong>
+                <span class="description">Why 90% of marketplaces fail and how to be in the 10%</span>
+            </li>
+            <li>
+                <strong>David vs. Goliath: Taking on Betfair's Monopoly</strong>
+                <span class="description">How we competed with an incumbent 100x our size (and won market share)</span>
+            </li>
+            <li>
+                <strong>The Prediction Market Paradox</strong>
+                <span class="description">Why the most accurate markets are often the least profitable</span>
+            </li>
+            <li>
+                <strong>Market Design > Marketing</strong>
+                <span class="description">The unglamorous infrastructure decisions that determine success</span>
+            </li>
+            <li>
+                <strong>The Fourth Wave: Why This Prediction Market Boom Is Different</strong>
+                <span class="description">Pattern recognition from someone who's seen three cycles fail</span>
+            </li>
         </ul>
+
+        <!-- Current Projects -->
+        <h2 class="section-title">Current Focus</h2>
+        <ul>
+            <li><strong>Smarkets:</strong> Still CEO, still building. 200+ team across London and LA.</li>
+            <li><strong>The Business of Betting Podcast:</strong> Interviewing founders and operators who are building the future of prediction markets.</li>
+            <li><strong>Writing:</strong> Documenting 18 years of lessons about market design, liquidity, and what actually works.</li>
+            <li><strong>Advising:</strong> Helping the next generation avoid the mistakes I made (there were many).</li>
+        </ul>
+
+        <!-- Media & Press -->
+        <h2 class="section-title">Media & Resources</h2>
+        <div class="resource-links">
+            <p>For headshots, company logos, or detailed fact sheets, please contact: <a href="mailto:jason@smarkets.com">jason@smarkets.com</a></p>
+            <p style="margin-top: 1em;">Recent coverage and appearances available upon request. Happy to provide background or on-record commentary on prediction markets, market design, liquidity provision, or the broader betting/gambling industry.</p>
+        </div>
 
         <!-- Contact -->
         <div class="contact-box">
-            <p><strong>For speaking inquiries:</strong></p>
+            <p><strong>For speaking, media, or advisory inquiries:</strong></p>
             <p><a href="mailto:jason@smarkets.com">jason@smarkets.com</a></p>
-            <p style="margin-top: 1em;">Available for keynotes, panels, podcasts, and media interviews.</p>
+            <p style="margin-top: 1em;">Available for keynotes, panels, podcasts, and workshops.</p>
+            <p>Based in London. Office in Los Angeles. Will travel for the right opportunity.</p>
         </div>
     </div>
 </body>
