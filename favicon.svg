@@ -2,6 +2,9 @@
   <!-- Background -->
   <rect width="32" height="32" fill="#1a1a1a" rx="3"/>
 
-  <!-- JT Initials -->
-  <text x="16" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">JT</text>
+  <!-- J letter -->
+  <text x="11" y="21.5" font-family="system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">J</text>
+
+  <!-- T letter -->
+  <text x="21" y="21.5" font-family="system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">T</text>
 </svg>
