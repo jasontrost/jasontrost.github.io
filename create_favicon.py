@@ -3,7 +3,7 @@ import struct
 import io
 
 def create_ico_file(size=32):
-    """Create a simple ICO file with JT text on black background - improved spacing"""
+    """Create a simple ICO file with JT text on black background - large and centered"""
 
     # BMP header for 32x32 image
     width, height = size, size
@@ -11,21 +11,21 @@ def create_ico_file(size=32):
     # Create pixel data for black background with white JT
     pixels = []
 
-    # Create a better spaced "JT" pattern in the center
+    # Create larger, centered JT letters
     for y in range(height):
         row = []
         for x in range(width):
-            # Create a cleaner JT pattern with better spacing
-            if 9 <= y <= 22:  # Vertical range for letters
-                # J shape - moved left and made thinner
-                if ((6 <= x <= 7 and 9 <= y <= 18) or  # J vertical
-                    (6 <= x <= 11 and 9 <= y <= 10) or  # J top
-                    (x == 6 and 17 <= y <= 18) or  # J curve bottom
-                    (4 <= x <= 6 and y == 18)):  # J curve
+            # Create bold JT pattern - much larger and centered
+            if 7 <= y <= 23:  # Vertical range for letters
+                # J shape - larger and bolder
+                if ((9 <= x <= 11 and 7 <= y <= 20) or  # J vertical stem (3 pixels wide)
+                    (9 <= x <= 15 and 7 <= y <= 9) or  # J top bar (3 pixels tall)
+                    (5 <= x <= 9 and 18 <= y <= 20) or  # J bottom curve
+                    (5 <= x <= 8 and 19 <= y <= 21)):  # J hook
                     row.append((255, 255, 255, 255))  # White
-                # T shape - moved right and made thinner
-                elif ((19 <= x <= 20 and 11 <= y <= 22) or  # T vertical
-                      (16 <= x <= 23 and 9 <= y <= 10)):  # T horizontal
+                # T shape - larger and bolder
+                elif ((17 <= x <= 19 and 10 <= y <= 23) or  # T vertical stem (3 pixels wide)
+                      (14 <= x <= 22 and 7 <= y <= 9)):  # T horizontal bar (3 pixels tall)
                     row.append((255, 255, 255, 255))  # White
                 else:
                     row.append((26, 26, 26, 255))  # Dark gray (#1a1a1a)
@@ -85,4 +85,4 @@ ico_data = create_ico_file(32)
 with open('favicon.ico', 'wb') as f:
     f.write(ico_data)
 
-print("Created favicon.ico with improved JT design")
+print("Created favicon.ico with bold, centered JT design")

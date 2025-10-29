@@ -2,9 +2,6 @@
   <!-- Background -->
   <rect width="32" height="32" fill="#1a1a1a" rx="3"/>
 
-  <!-- J letter -->
-  <text x="11" y="21.5" font-family="system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">J</text>
-
-  <!-- T letter -->
-  <text x="21" y="21.5" font-family="system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">T</text>
+  <!-- JT letters together, large and centered -->
+  <text x="16" y="22" font-family="system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">JT</text>
 </svg>
