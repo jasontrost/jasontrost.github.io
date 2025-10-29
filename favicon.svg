@@ -1,7 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- Background -->
-  <rect width="32" height="32" fill="#1a1a1a" rx="3"/>
+  <!-- Black background with rounded corners -->
+  <rect width="32" height="32" fill="#000000" rx="4"/>
 
-  <!-- JT letters together, large and centered -->
-  <text x="16" y="22" font-family="system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">JT</text>
+  <!-- JT in elegant serif style -->
+  <g fill="#ffffff">
+    <!-- J letter with serif and curve -->
+    <path d="M 14 8 L 14 20 C 14 22 13 23 11 23 C 9 23 8 22 8 20 L 8 19 L 10 19 L 10 20 C 10 21 10.5 21.5 11 21.5 C 11.5 21.5 12 21 12 20 L 12 8 Z"/>
+    <!-- J top serif -->
+    <rect x="11" y="8" width="5" height="1.5"/>
+
+    <!-- T letter with serif -->
+    <rect x="16" y="8" width="8" height="1.5"/>
+    <rect x="19" y="8" width="2" height="15"/>
+    <!-- T bottom serifs -->
+    <rect x="17" y="21.5" width="6" height="1.5"/>
+  </g>
 </svg>

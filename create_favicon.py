@@ -3,7 +3,7 @@ import struct
 import io
 
 def create_ico_file(size=32):
-    """Create a simple ICO file with JT text on black background - large and centered"""
+    """Create an ICO file with serif-style JT on black background"""
 
     # BMP header for 32x32 image
     width, height = size, size
@@ -11,26 +11,40 @@ def create_ico_file(size=32):
     # Create pixel data for black background with white JT
     pixels = []
 
-    # Create larger, centered JT letters
+    # Create serif-style JT pattern
     for y in range(height):
         row = []
         for x in range(width):
-            # Create bold JT pattern - much larger and centered
-            if 7 <= y <= 23:  # Vertical range for letters
-                # J shape - larger and bolder
-                if ((9 <= x <= 11 and 7 <= y <= 20) or  # J vertical stem (3 pixels wide)
-                    (9 <= x <= 15 and 7 <= y <= 9) or  # J top bar (3 pixels tall)
-                    (5 <= x <= 9 and 18 <= y <= 20) or  # J bottom curve
-                    (5 <= x <= 8 and 19 <= y <= 21)):  # J hook
-                    row.append((255, 255, 255, 255))  # White
-                # T shape - larger and bolder
-                elif ((17 <= x <= 19 and 10 <= y <= 23) or  # T vertical stem (3 pixels wide)
-                      (14 <= x <= 22 and 7 <= y <= 9)):  # T horizontal bar (3 pixels tall)
-                    row.append((255, 255, 255, 255))  # White
-                else:
-                    row.append((26, 26, 26, 255))  # Dark gray (#1a1a1a)
-            else:
-                row.append((26, 26, 26, 255))  # Dark gray
+            # Black background
+            pixel = (0, 0, 0, 255)
+
+            # J letter with serifs (positioned on left)
+            # J top serif
+            if 8 <= y <= 9 and 11 <= x <= 15:
+                pixel = (255, 255, 255, 255)
+            # J vertical stem
+            elif 8 <= y <= 20 and 12 <= x <= 13:
+                pixel = (255, 255, 255, 255)
+            # J curve at bottom
+            elif 19 <= y <= 20 and 10 <= x <= 12:
+                pixel = (255, 255, 255, 255)
+            elif 20 <= y <= 21 and 9 <= x <= 12:
+                pixel = (255, 255, 255, 255)
+            elif 21 <= y <= 22 and 9 <= x <= 11:
+                pixel = (255, 255, 255, 255)
+
+            # T letter with serifs (positioned on right)
+            # T top bar
+            elif 8 <= y <= 9 and 16 <= x <= 23:
+                pixel = (255, 255, 255, 255)
+            # T vertical stem
+            elif 8 <= y <= 23 and 19 <= x <= 20:
+                pixel = (255, 255, 255, 255)
+            # T bottom serifs
+            elif 22 <= y <= 23 and 17 <= x <= 22:
+                pixel = (255, 255, 255, 255)
+
+            row.append(pixel)
         pixels.append(row)
 
     # Create ICO file structure
@@ -85,4 +99,4 @@ ico_data = create_ico_file(32)
 with open('favicon.ico', 'wb') as f:
     f.write(ico_data)
 
-print("Created favicon.ico with bold, centered JT design")
+print("Created favicon.ico with elegant serif JT design")
