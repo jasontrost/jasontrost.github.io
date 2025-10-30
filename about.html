@@ -19,337 +19,9 @@
 
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" type="image/x-icon" href="favicon.ico">
-
-    <style>
-        /* Reset and base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: #1a1a1a;
-            background: #fff;
-            line-height: 1.8;
-            font-size: 1.05em;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* Container */
-        .container {
-            max-width: 650px;
-            margin: 0 auto;
-            padding: 40px 40px 60px;
-        }
-
-        /* Navigation */
-        nav {
-            margin-bottom: 3em;
-            padding-bottom: 1em;
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        nav a {
-            color: #666;
-            text-decoration: none;
-            margin-right: 1.5em;
-            font-size: 0.95em;
-        }
-
-        nav a:hover {
-            color: #1a1a1a;
-        }
-
-        nav a.active {
-            color: #1a1a1a;
-            font-weight: 500;
-        }
-
-        /* Typography */
-        h1 {
-            font-size: 2.5em;
-            font-weight: 600;
-            line-height: 1.1;
-            margin-bottom: 0.5em;
-        }
-
-        .subtitle {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 2em;
-        }
-
-        h2 {
-            font-size: 1.3em;
-            font-weight: 600;
-            margin-top: 3em;
-            margin-bottom: 1.2em;
-            color: #1a1a1a;
-        }
-
-        .section-title {
-            font-size: 0.85em;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #999;
-            margin-bottom: 1.5em;
-            margin-top: 3em;
-            font-weight: 500;
-        }
-
-        .section-title:first-of-type {
-            margin-top: 2em;
-        }
-
-        /* Quick Facts */
-        .facts-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5em;
-            margin-bottom: 3em;
-            padding: 2em;
-            background: #f9f9f9;
-            border-radius: 4px;
-            border: 1px solid #e5e5e5;
-        }
-
-        .fact {
-            text-align: center;
-            padding: 0.5em;
-        }
-
-        .fact-number {
-            font-size: 2em;
-            font-weight: 700;
-            color: #0066cc;
-            display: block;
-            line-height: 1.2;
-        }
-
-        .fact-label {
-            font-size: 0.85em;
-            color: #666;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-top: 0.3em;
-        }
-
-        @media (max-width: 480px) {
-            .facts-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Content styling */
-        p {
-            margin-bottom: 1.5em;
-        }
-
-        .bio-box {
-            background: #f9f9f9;
-            padding: 1.5em;
-            border-radius: 3px;
-            margin-bottom: 2em;
-            border: 1px solid #e5e5e5;
-        }
-
-        .bio-box p {
-            margin-bottom: 0;
-            font-size: 0.95em;
-            line-height: 1.7;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 1.5em;
-        }
-
-        ul li {
-            position: relative;
-            padding-left: 1.5em;
-            margin-bottom: 0.8em;
-        }
-
-        ul li:before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #666;
-        }
-
-        .speaking-list li {
-            padding-left: 0;
-            margin-bottom: 1.5em;
-        }
-
-        .speaking-list li:before {
-            display: none;
-        }
-
-        .speaking-list strong {
-            display: block;
-            color: #1a1a1a;
-            margin-bottom: 0.3em;
-        }
-
-        .speaking-list .description {
-            color: #666;
-            font-size: 0.95em;
-            font-style: italic;
-        }
-
-        .media-list li {
-            padding-left: 0;
-            margin-bottom: 1.2em;
-        }
-
-        .media-list li:before {
-            display: none;
-        }
-
-        .media-list strong {
-            display: block;
-            margin-bottom: 0.2em;
-            color: #1a1a1a;
-        }
-
-        .media-list .source {
-            color: #666;
-            font-size: 0.95em;
-        }
-
-        /* Links */
-        a {
-            color: #0066cc;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        a:hover {
-            color: #0052a3;
-            text-decoration: underline;
-        }
-
-        .resource-links {
-            margin: 1.5em 0;
-        }
-
-        .resource-links p {
-            color: #666;
-            font-size: 0.95em;
-            margin-bottom: 0.5em;
-        }
-
-        /* Contact */
-        .contact-box {
-            background: #f0f7ff;
-            padding: 1.5em;
-            border-radius: 3px;
-            margin-top: 2em;
-            border: 1px solid #d4e5f7;
-        }
-
-        .contact-box p {
-            margin-bottom: 0.5em;
-            font-size: 0.95em;
-        }
-
-        .contact-box p:last-child {
-            margin-bottom: 0;
-        }
-
-        .contact-box a {
-            font-weight: 500;
-        }
-
-        /* Timeline */
-        .timeline {
-            border-left: 2px solid #e5e5e5;
-            padding-left: 2em;
-            margin: 2em 0;
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 2em;
-        }
-
-        .timeline-item:before {
-            content: "";
-            position: absolute;
-            left: -2.5em;
-            top: 0.3em;
-            width: 10px;
-            height: 10px;
-            background: #0066cc;
-            border-radius: 50%;
-            border: 2px solid #fff;
-            box-shadow: 0 0 0 2px #e5e5e5;
-        }
-
-        .timeline-year {
-            font-weight: 700;
-            color: #0066cc;
-            font-size: 0.9em;
-            margin-bottom: 0.3em;
-        }
-
-        .timeline-content {
-            color: #333;
-            font-size: 0.95em;
-        }
-
-        /* Emphasis */
-        em {
-            font-style: italic;
-        }
-
-        strong {
-            font-weight: 600;
-        }
-
-        .highlight {
-            background: #fff4cc;
-            padding: 0 0.2em;
-        }
-
-        /* Mobile responsive */
-        @media (max-width: 600px) {
-            .container {
-                padding: 30px 30px 50px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.2em;
-            }
-
-            .bio-box {
-                padding: 1.2em;
-            }
-
-            .timeline {
-                padding-left: 1.5em;
-            }
-
-            .timeline-item:before {
-                left: -2em;
-            }
-
-            .facts-grid {
-                padding: 1.5em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="about-page">
     <div class="container">
         <nav>
             <a href="/">Home</a>
@@ -370,7 +42,7 @@
                 <span class="fact-label">Building Markets</span>
             </div>
             <div class="fact">
-                <span class="fact-number">$47 billion</span>
+                <span class="fact-number">£Billions</span>
                 <span class="fact-label">Volume Processed</span>
             </div>
             <div class="fact">
@@ -403,7 +75,7 @@
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-year">2008</div>
-                <div class="timeline-content">Quit UBS to found Smarkets. Goal: push for better prediction market experience.</div>
+                <div class="timeline-content">Quit UBS to found Smarkets. Goal: Beat the incumbent with 2% commission.</div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-year">2010</div>
@@ -426,11 +98,11 @@
                 <div class="timeline-content">Pandemic surge. Smarkets hits record volumes. New competitors emerge.</div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-year">2021</div>
-                <div class="timeline-content">Raised a Series B. Began US market strategy (take two).</div>
+                <div class="timeline-year">2022</div>
+                <div class="timeline-content">Opened Los Angeles office. Began US market strategy (take two).</div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-year">2025</div>
+                <div class="timeline-year">2024</div>
                 <div class="timeline-content">18 years in. Watching the fourth prediction market hype cycle. This one might stick.</div>
             </div>
         </div>
@@ -440,7 +112,7 @@
         <ul>
             <li><strong>Liquidity is everything.</strong> Without it, you're just a website with good intentions.</li>
             <li><strong>Market makers > market takers.</strong> We run our own trading desk because users won't provide liquidity.</li>
-            <li><strong>Low transaction fees</strong> Lower fees drive volume. We proved this against the competition.</li>
+            <li><strong>2% beats 5%.</strong> Lower commissions drive volume. We proved this against the incumbents.</li>
             <li><strong>Politics gets press, sports makes money.</strong> One is marketing, the other is business.</li>
             <li><strong>Regulation is a moat, not a barrier.</strong> Getting licensed filters out the tourists.</li>
             <li><strong>The US is different.</strong> What works in Europe doesn't translate. I learned this the hard way.</li>
@@ -460,7 +132,7 @@
                 <span class="description">Why 90% of marketplaces fail and how to be in the 10%</span>
             </li>
             <li>
-                <strong>David vs. Goliath: Taking on a Competitor's Monopoly</strong>
+                <strong>David vs. Goliath: Taking on the Monopoly</strong>
                 <span class="description">How we competed with an incumbent 100x our size (and won market share)</span>
             </li>
             <li>
@@ -488,15 +160,16 @@
         <!-- Media & Press -->
         <h2 class="section-title">Media & Resources</h2>
         <div class="resource-links">
+            <p>For headshots, company logos, or detailed fact sheets, please contact: <a href="mailto:jason@smarkets.com">jason@smarkets.com</a></p>
             <p style="margin-top: 1em;">Recent coverage and appearances available upon request. Happy to provide background or on-record commentary on prediction markets, market design, liquidity provision, or the broader betting/gambling industry.</p>
         </div>
 
         <!-- Contact -->
         <div class="contact-box">
             <p><strong>For speaking, media, or advisory inquiries:</strong></p>
-            <p><a href="mailto:jason.trost+pleasedontspamme@smarkets.com">jason.trost+pleasedontspamme@smarkets.com</a></p>
+            <p><a href="mailto:jason@smarkets.com">jason@smarkets.com</a></p>
             <p style="margin-top: 1em;">Available for keynotes, panels, podcasts, and workshops.</p>
-            <p>Based in London.</p>
+            <p>Based in London. Office in Los Angeles. Will travel for the right opportunity.</p>
         </div>
     </div>
 </body>

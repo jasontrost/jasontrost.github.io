@@ -1,0 +1,447 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+    line-height: 1.8;
+    font-size: 1.05em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 40px 40px 60px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 3em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav a {
+    color: #666;
+    text-decoration: none;
+    margin-right: 1.5em;
+    font-size: 0.95em;
+}
+
+nav a:hover {
+    color: #1a1a1a;
+}
+
+nav a.active {
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 3em;
+    margin-bottom: 1.2em;
+    color: #1a1a1a;
+}
+
+/* About page h1 has different margin */
+.about-page h1 {
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    font-size: 1.15em;
+    color: #666;
+    margin-bottom: 1.5em;
+}
+
+/* About page subtitle */
+.about-page .subtitle {
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
+
+.tagline {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #1a1a1a;
+    margin-bottom: 1em;
+}
+
+.highlight {
+    font-weight: 500;
+}
+
+/* Sections */
+section {
+    margin: 4em 0;
+}
+
+section:first-of-type {
+    margin-top: 2em;
+}
+
+.section-title {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #999;
+    margin-bottom: 1.5em;
+    font-weight: 500;
+}
+
+/* About page section titles */
+.about-page .section-title {
+    margin-top: 3em;
+}
+
+.about-page .section-title:first-of-type {
+    margin-top: 2em;
+}
+
+/* Content styling */
+p {
+    margin-bottom: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5em;
+}
+
+ul li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #666;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0052a3;
+    text-decoration: underline;
+}
+
+.link-list {
+    margin-bottom: 1.5em;
+}
+
+.link-list a {
+    display: inline-block;
+    margin-right: 2em;
+    margin-bottom: 0.5em;
+    font-size: 0.95em;
+}
+
+/* Contact */
+.contact {
+    margin-top: 1em;
+    color: #666;
+    font-size: 0.95em;
+}
+
+.contact a {
+    color: #666;
+    text-decoration: underline;
+}
+
+.contact a:hover {
+    color: #1a1a1a;
+}
+
+/* Personal section */
+.personal {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.7;
+    padding-top: 2em;
+    border-top: 1px solid #e5e5e5;
+}
+
+.personal p {
+    margin-bottom: 0.8em;
+}
+
+/* Photo */
+.photo-container {
+    margin: 3em 0 4em 0;
+    text-align: center;
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 601px) {
+    .photo {
+        max-width: 450px;
+    }
+}
+
+/* About Page Specific Styles */
+
+/* Quick Facts Grid */
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    margin-bottom: 3em;
+    padding: 2em;
+    background: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+}
+
+.fact {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.fact-number {
+    font-size: 2em;
+    font-weight: 700;
+    color: #0066cc;
+    display: block;
+    line-height: 1.2;
+}
+
+.fact-label {
+    font-size: 0.85em;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.3em;
+}
+
+@media (max-width: 480px) {
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Bio Box */
+.bio-box {
+    background: #f9f9f9;
+    padding: 1.5em;
+    border-radius: 3px;
+    margin-bottom: 2em;
+    border: 1px solid #e5e5e5;
+}
+
+.bio-box p {
+    margin-bottom: 0;
+    font-size: 0.95em;
+    line-height: 1.7;
+}
+
+/* Speaking List */
+.speaking-list li {
+    padding-left: 0;
+    margin-bottom: 1.5em;
+}
+
+.speaking-list li:before {
+    display: none;
+}
+
+.speaking-list strong {
+    display: block;
+    color: #1a1a1a;
+    margin-bottom: 0.3em;
+}
+
+.speaking-list .description {
+    color: #666;
+    font-size: 0.95em;
+    font-style: italic;
+}
+
+/* Media List */
+.media-list li {
+    padding-left: 0;
+    margin-bottom: 1.2em;
+}
+
+.media-list li:before {
+    display: none;
+}
+
+.media-list strong {
+    display: block;
+    margin-bottom: 0.2em;
+    color: #1a1a1a;
+}
+
+.media-list .source {
+    color: #666;
+    font-size: 0.95em;
+}
+
+/* Resource Links */
+.resource-links {
+    margin: 1.5em 0;
+}
+
+.resource-links p {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+}
+
+/* Contact Box */
+.contact-box {
+    background: #f0f7ff;
+    padding: 1.5em;
+    border-radius: 3px;
+    margin-top: 2em;
+    border: 1px solid #d4e5f7;
+}
+
+.contact-box p {
+    margin-bottom: 0.5em;
+    font-size: 0.95em;
+}
+
+.contact-box p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-box a {
+    font-weight: 500;
+}
+
+/* Timeline */
+.timeline {
+    border-left: 2px solid #e5e5e5;
+    padding-left: 2em;
+    margin: 2em 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    left: -2.5em;
+    top: 0.3em;
+    width: 10px;
+    height: 10px;
+    background: #0066cc;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #e5e5e5;
+}
+
+.timeline-year {
+    font-weight: 700;
+    color: #0066cc;
+    font-size: 0.9em;
+    margin-bottom: 0.3em;
+}
+
+.timeline-content {
+    color: #333;
+    font-size: 0.95em;
+}
+
+/* Emphasis */
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* Text highlight (About page) */
+span.highlight {
+    background: #fff4cc;
+    padding: 0 0.2em;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 30px 50px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .tagline {
+        font-size: 1.1em;
+    }
+
+    section {
+        margin: 3em 0;
+    }
+
+    .link-list a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 0.8em;
+    }
+
+    .bio-box {
+        padding: 1.2em;
+    }
+
+    .timeline {
+        padding-left: 1.5em;
+    }
+
+    .timeline-item:before {
+        left: -2em;
+    }
+
+    .facts-grid {
+        padding: 1.5em;
+    }
+
+    .resource-links a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 0.8em;
+    }
+}
