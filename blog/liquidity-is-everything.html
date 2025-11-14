@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquidity Is Everything: Why Most Markets Fail - Jason Trost</title>
+    <meta name="description" content="After building prediction markets for 18 years, I've learned one truth above all others: liquidity is everything. Here's why most markets fail.">
+
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Liquidity Is Everything: Why Most Markets Fail">
+    <meta property="og:description" content="After building prediction markets for 18 years, I've learned one truth above all others: liquidity is everything. Here's why most markets fail.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jasontrost.github.io/blog/liquidity-is-everything.html">
+
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Blog post specific styles */
+        .post-header {
+            margin-bottom: 2em;
+            padding-bottom: 2em;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .post-title {
+            font-size: 2.2em;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 0.5em;
+            color: #1a1a1a;
+        }
+
+        .post-meta {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 0.5em;
+        }
+
+        .post-meta span {
+            margin-right: 1em;
+        }
+
+        .post-content {
+            font-size: 1.08em;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .post-content h2 {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-top: 2.5em;
+            margin-bottom: 1em;
+            color: #1a1a1a;
+        }
+
+        .post-content h3 {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 2em;
+            margin-bottom: 0.8em;
+            color: #1a1a1a;
+        }
+
+        .post-content p {
+            margin-bottom: 1.5em;
+        }
+
+        .post-content blockquote {
+            border-left: 3px solid #0066cc;
+            padding-left: 1.5em;
+            margin: 2em 0;
+            color: #555;
+            font-style: italic;
+        }
+
+        .post-content code {
+            background: #f5f5f5;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+        }
+
+        .post-content pre {
+            background: #f5f5f5;
+            padding: 1.5em;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 2em 0;
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .callout {
+            background: #f0f7ff;
+            border: 1px solid #d4e5f7;
+            border-radius: 4px;
+            padding: 1.5em;
+            margin: 2em 0;
+        }
+
+        .callout-title {
+            font-weight: 600;
+            margin-bottom: 0.5em;
+            color: #0066cc;
+        }
+
+        .post-footer {
+            margin-top: 4em;
+            padding-top: 2em;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .author-bio {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5em;
+            background: #f9f9f9;
+            padding: 1.5em;
+            border-radius: 4px;
+            margin-bottom: 2em;
+        }
+
+        .author-bio-text h4 {
+            margin-bottom: 0.5em;
+            color: #1a1a1a;
+        }
+
+        .author-bio-text p {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3em;
+            font-size: 0.95em;
+        }
+
+        .post-nav a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .post-nav a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .post-title {
+                font-size: 1.8em;
+            }
+
+            .post-content {
+                font-size: 1.05em;
+            }
+
+            .author-bio {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P53YS20M57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-P53YS20M57');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/blog/" class="active">Blog</a>
+            <a href="/about.html">About</a>
+        </nav>
+
+        <article>
+            <header class="post-header">
+                <h1 class="post-title">Liquidity Is Everything: Why Most Markets Fail</h1>
+                <div class="post-meta">
+                    <span>November 14, 2024</span>
+                    <span>8 min read</span>
+                </div>
+            </header>
+
+            <div class="post-content">
+                <p><strong>After building prediction markets for 18 years, I've learned one truth above all others: liquidity is everything.</strong></p>
+
+                <p>Not technology. Not UI. Not even regulatory approval. Without liquidity, you're just running an empty casino where nobody wants to play.</p>
+
+                <p>I've watched dozens of prediction markets launch and die. The pattern is always the same: grand vision, impressive technology, regulatory fanfare, then... silence. An empty order book. Wide spreads. Users who visit once and never return.</p>
+
+                <p>Here's what I've learned about why most markets fail and how to build ones that survive.</p>
+
+                <h2>The Cold Start Problem</h2>
+
+                <p>Every market faces the same chicken-and-egg problem: traders need liquidity to trade, but you need traders to create liquidity. Most platforms think they can solve this with marketing. They can't.</p>
+
+                <p>In 2008, when we launched Smarkets, we made this mistake. We built beautiful technology—10x faster than the incumbents, lower fees, better UI. We thought traders would flock to us. They didn't.</p>
+
+                <p>Why? Because a trader looking to bet £10,000 on Liverpool doesn't care about your matching engine's microsecond latency. They care about one thing: can they get their bet matched at a fair price?</p>
+
+                <div class="callout">
+                    <div class="callout-title">The Liquidity Death Spiral</div>
+                    <p>No liquidity → Wide spreads → Poor user experience → Users leave → Less liquidity</p>
+                    <p>Once this spiral starts, it's nearly impossible to reverse.</p>
+                </div>
+
+                <h2>The Hidden Cost of Liquidity</h2>
+
+                <p>Here's what nobody tells you about liquidity: it's expensive. Really expensive.</p>
+
+                <p>To bootstrap a market, you need market makers. Professional market makers aren't charities—they need to make money. That means either:</p>
+
+                <ol style="list-style-type: decimal; padding-left: 2em;">
+                    <li style="padding-left: 0.5em; margin-bottom: 0.8em;">You pay them directly (expensive)</li>
+                    <li style="padding-left: 0.5em; margin-bottom: 0.8em;">You give them advantages that retail traders don't get (unfair)</li>
+                    <li style="padding-left: 0.5em; margin-bottom: 0.8em;">You become the market maker yourself (risky)</li>
+                </ol>
+
+                <p>We tried all three. The first two didn't work—they created artificial markets that collapsed the moment support was withdrawn. The third option? That's where things got interesting.</p>
+
+                <h2>Becoming the House</h2>
+
+                <p>In 2015, we made a controversial decision: we would run our own trading desk. Not just to provide liquidity, but to actually take positions in markets.</p>
+
+                <p>The prediction market purists hated this. "You're supposed to be a neutral platform!" they cried. But here's what the purists don't understand: in the early stages, there's no such thing as a neutral platform. You're either actively building liquidity or you're dying.</p>
+
+                <p>Our trading desk now generates significant revenue while providing the liquidity that makes our markets work. It's not about having an edge over customers—it's about being willing to take the other side when nobody else will.</p>
+
+                <h2>The Segmentation Secret</h2>
+
+                <p>Not all liquidity is equal. £1 million of liquidity in Manchester United vs. Liverpool is worth more than £10 million spread across 1,000 obscure markets.</p>
+
+                <p>Most platforms make the mistake of trying to cover everything. "We'll be the everything store of prediction markets!" they declare, launching markets on rainfall in Mumbai and the next Pope's nationality.</p>
+
+                <p>This is backwards. Liquidity begets liquidity, but only within specific verticals. Soccer bettors bring more soccer bettors. Political traders bring more political traders. But soccer bettors don't suddenly start trading papal elections just because you offer them.</p>
+
+                <blockquote>
+                    <p>"Focus is saying no to 1,000 good ideas. In markets, it's saying no to 10,000 markets you could create but shouldn't."</p>
+                </blockquote>
+
+                <h2>The Regulation Paradox</h2>
+
+                <p>Here's something counterintuitive: getting regulated actually helps with liquidity.</p>
+
+                <p>Not because regulation makes markets more efficient (it doesn't). But because it filters out the tourists and attracts serious players with serious money.</p>
+
+                <p>When we got our UK license, our application was 10,000 pages. It cost millions in legal fees. It took years. Most called us crazy. But that license became our moat. Professional traders trust regulated markets. Payment processors work with regulated companies. Advertisers will promote regulated platforms.</p>
+
+                <p>The platforms trying to dodge regulation with crypto tokens and offshore entities? They might move fast initially, but they hit a ceiling. The real money—institutional money—won't touch them.</p>
+
+                <h2>What Actually Works</h2>
+
+                <p>After 18 years and billions in volume, here's what actually creates sustainable liquidity:</p>
+
+                <h3>1. Start Narrow, Go Deep</h3>
+                <p>Pick one vertical and dominate it. We started with soccer, specifically Premier League. Not all sports. Not all soccer. Just Premier League. We had better prices and more liquidity on Arsenal vs. Chelsea than platforms 100x our size.</p>
+
+                <h3>2. Make Your Own Markets</h3>
+                <p>Don't wait for organic liquidity. Seed it yourself. Yes, this means taking risk. Yes, this means you might lose money initially. But it's the only way to break the cold start problem.</p>
+
+                <h3>3. Liquidity Compounds</h3>
+                <p>£100K of liquidity attracts traders who add £10K. £1M attracts traders who add £100K. £10M attracts traders who add £1M. But this only works if you concentrate it. Spread thin, liquidity evaporates.</p>
+
+                <h3>4. Time in Market Beats Timing the Market</h3>
+                <p>Liquidity builds slowly, then suddenly. Smarkets was a ghost town for seven years. Then something clicked. The liquidity we'd been slowly building hit critical mass. Network effects kicked in. Now we process billions.</p>
+
+                <h2>The Next Wave</h2>
+
+                <p>The current prediction market boom (Polymarket, Kalshi, etc.) is making the same mistakes we made in 2008. They're focused on press coverage and user acquisition, not liquidity fundamentals.</p>
+
+                <p>Polymarket's election volumes are impressive, but what happens after the election? Can they maintain liquidity without the world's attention? History suggests no.</p>
+
+                <p>The winners in the next wave won't be the platforms with the best technology or the most markets or the biggest marketing budgets. They'll be the ones who understand this simple truth:</p>
+
+                <p><strong>Liquidity is everything. Everything else is just noise.</strong></p>
+
+                <hr style="margin: 3em 0; border: none; border-top: 1px solid #e5e5e5;">
+
+                <p><em>This is the first in a series on building prediction markets that last. Next: "Why Politics Gets Press but Sports Makes Money."</em></p>
+            </div>
+
+            <footer class="post-footer">
+                <div class="author-bio">
+                    <div class="author-bio-text">
+                        <h4>Jason Trost</h4>
+                        <p>Founder & CEO of Smarkets. Building prediction markets since 2008. Survived three boom-bust cycles and processing billions in volume annually.</p>
+                    </div>
+                </div>
+
+                <div class="post-nav">
+                    <a href="/blog/">← Back to all posts</a>
+                    <a href="/blog/three-prediction-market-cycles.html">Next: Three Prediction Market Cycles →</a>
+                </div>
+            </footer>
+        </article>
+    </div>
+</body>
+</html>

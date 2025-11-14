@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Jason Trost - Blog</title>
+        <description>Thoughts on prediction markets, fintech infrastructure, and building financial systems that last.</description>
+        <link>https://jasontrost.github.io/blog/</link>
+        <atom:link href="https://jasontrost.github.io/blog/rss.xml" rel="self" type="application/rss+xml"/>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 14 Nov 2024 12:00:00 GMT</lastBuildDate>
+        <pubDate>Thu, 14 Nov 2024 12:00:00 GMT</pubDate>
+
+        <item>
+            <title>Liquidity Is Everything: Why Most Markets Fail</title>
+            <description>After building prediction markets for 18 years, I've learned one truth above all others: liquidity is everything. Not technology, not UI, not even regulatory approval. Without liquidity, you're just running an empty casino. Here's what I've learned about why most markets fail and how to build ones that survive.</description>
+            <link>https://jasontrost.github.io/blog/liquidity-is-everything.html</link>
+            <guid isPermaLink="true">https://jasontrost.github.io/blog/liquidity-is-everything.html</guid>
+            <pubDate>Thu, 14 Nov 2024 12:00:00 GMT</pubDate>
+            <author>jason@smarkets.com (Jason Trost)</author>
+            <content:encoded><![CDATA[
+                <p>After building prediction markets for 18 years, I've learned one truth above all others: liquidity is everything.</p>
+
+                <p>Not technology. Not UI. Not even regulatory approval. Without liquidity, you're just running an empty casino where nobody wants to play.</p>
+
+                <p>I've watched dozens of prediction markets launch and die. The pattern is always the same: grand vision, impressive technology, regulatory fanfare, then... silence. An empty order book. Wide spreads. Users who visit once and never return.</p>
+
+                <p>Here's what I've learned about why most markets fail and how to build ones that survive...</p>
+
+                <p><a href="https://jasontrost.github.io/blog/liquidity-is-everything.html">Read the full article</a></p>
+            ]]></content:encoded>
+        </item>
+
+        <item>
+            <title>I've Survived Three Prediction Market Booms. Here's What's Different This Time</title>
+            <description>2008, 2016, 2024. Each prediction market boom promises to revolutionize how we understand future events. Each one has ended the same way. As someone who's been building through all three cycles, let me tell you what's actually different this time—and what dangerously isn't.</description>
+            <link>https://jasontrost.github.io/blog/three-prediction-market-cycles.html</link>
+            <guid isPermaLink="true">https://jasontrost.github.io/blog/three-prediction-market-cycles.html</guid>
+            <pubDate>Tue, 12 Nov 2024 12:00:00 GMT</pubDate>
+            <author>jason@smarkets.com (Jason Trost)</author>
+            <content:encoded><![CDATA[
+                <p>2008, 2016, 2024. Each prediction market boom promises to revolutionize how we understand future events. Each one has ended the same way.</p>
+
+                <p>As someone who's been building through all three cycles, let me tell you what's actually different this time—and what dangerously isn't.</p>
+
+                <p>The current boom feels different because the numbers are bigger, the technology is better, and the mainstream finally gets it. But I've been here before...</p>
+
+                <p><a href="https://jasontrost.github.io/blog/three-prediction-market-cycles.html">Read the full article</a></p>
+            ]]></content:encoded>
+        </item>
+
+        <item>
+            <title>Politics Gets Press, Sports Makes Money: The Truth About Prediction Markets</title>
+            <description>Everyone wants to talk about election markets. The media loves them, Twitter obsesses over them, and VCs throw money at them. But after processing billions in volume, I can tell you a secret: political prediction markets are a loss leader. The real business is elsewhere.</description>
+            <link>https://jasontrost.github.io/blog/sports-vs-politics.html</link>
+            <guid isPermaLink="true">https://jasontrost.github.io/blog/sports-vs-politics.html</guid>
+            <pubDate>Sun, 10 Nov 2024 12:00:00 GMT</pubDate>
+            <author>jason@smarkets.com (Jason Trost)</author>
+            <content:encoded><![CDATA[
+                <p>Everyone wants to talk about election markets. The media loves them, Twitter obsesses over them, and VCs throw money at them.</p>
+
+                <p>But after processing billions in volume, I can tell you a secret: political prediction markets are a loss leader. The real business is elsewhere.</p>
+
+                <p>Let me show you the numbers that nobody talks about...</p>
+
+                <p><a href="https://jasontrost.github.io/blog/sports-vs-politics.html">Read the full article</a></p>
+            ]]></content:encoded>
+        </item>
+    </channel>
+</rss>
