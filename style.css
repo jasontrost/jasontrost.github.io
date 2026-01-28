@@ -396,43 +396,43 @@ span.highlight {
 }
 
 /* ===================
-   Blog Styles
+   Essay Styles
    =================== */
 
-/* Blog Index Page */
-.blog-post {
+/* Essay Index Page */
+.essay-post {
     margin-bottom: 3em;
     padding-bottom: 2em;
     border-bottom: 1px solid #e5e5e5;
 }
 
-.blog-post:last-child {
+.essay-post:last-child {
     border-bottom: none;
 }
 
-.blog-post-title {
+.essay-post-title {
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 0.3em;
 }
 
-.blog-post-title a {
+.essay-post-title a {
     color: #1a1a1a;
     text-decoration: none;
 }
 
-.blog-post-title a:hover {
+.essay-post-title a:hover {
     color: #0066cc;
     text-decoration: none;
 }
 
-.blog-post-meta {
+.essay-post-meta {
     font-size: 0.9em;
     color: #666;
     margin-bottom: 1em;
 }
 
-.blog-post-excerpt {
+.essay-post-excerpt {
     color: #333;
     line-height: 1.7;
 }
@@ -448,7 +448,7 @@ span.highlight {
     text-decoration: underline;
 }
 
-.blog-intro {
+.essay-intro {
     font-size: 1.1em;
     color: #666;
     line-height: 1.7;
@@ -457,7 +457,7 @@ span.highlight {
     border-bottom: 1px solid #e5e5e5;
 }
 
-/* Blog Post Page */
+/* Essay Post Page */
 .post-header {
     margin-bottom: 2em;
     padding-bottom: 2em;
@@ -594,6 +594,31 @@ span.highlight {
     text-decoration: underline;
 }
 
+/* Site Footer */
+.site-footer {
+    margin-top: 4em;
+    padding-top: 2em;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.site-footer .footer-links,
+.site-footer .footer-pages {
+    margin-bottom: 1em;
+}
+
+.site-footer a {
+    color: #0066cc;
+    text-decoration: none;
+    margin: 0 0.8em;
+}
+
+.site-footer a:hover {
+    color: #0052a3;
+}
+
 /* Mobile responsive */
 @media (max-width: 600px) {
     .container {
@@ -644,7 +669,7 @@ span.highlight {
         margin-bottom: 0.8em;
     }
 
-    /* Blog responsive */
+    /* Essay responsive */
     .post-title {
         font-size: 1.8em;
     }

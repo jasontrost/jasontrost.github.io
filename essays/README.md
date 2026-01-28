@@ -1,6 +1,6 @@
-# Blog Management Guide
+# Essay Management Guide
 
-## How to Add a New Blog Post
+## How to Add a New Essay Post
 
 ### 1. Create Your New Post
 
@@ -19,19 +19,19 @@ Update these key elements in your new file:
 - **Content**: Replace the content in `<div class="post-content">`
 - **Navigation**: Update the "Next" link in the footer
 
-### 3. Add to Blog Index
+### 3. Add to Essay Index
 
 Edit `index.html` and add your new post at the top of the posts list:
 
 ```html
-<article class="blog-post">
-    <h2 class="blog-post-title">
-        <a href="/blog/your-new-post.html">Your Post Title</a>
+<article class="essay-post">
+    <h2 class="essay-post-title">
+        <a href="/essays/your-new-post.html">Your Post Title</a>
     </h2>
-    <div class="blog-post-meta">November 15, 2024 · 5 min read</div>
-    <div class="blog-post-excerpt">
+    <div class="essay-post-meta">November 15, 2024 · 5 min read</div>
+    <div class="essay-post-excerpt">
         <p>Your post excerpt goes here...</p>
-        <a href="/blog/your-new-post.html" class="read-more">Read more →</a>
+        <a href="/essays/your-new-post.html" class="read-more">Read more →</a>
     </div>
 </article>
 ```
@@ -48,8 +48,8 @@ Edit `rss.xml` and add your new post as the first `<item>` in the channel:
 <item>
     <title>Your Post Title</title>
     <description>Your post description...</description>
-    <link>https://jasontrost.github.io/blog/your-new-post.html</link>
-    <guid isPermaLink="true">https://jasontrost.github.io/blog/your-new-post.html</guid>
+    <link>https://jasontrost.github.io/essays/your-new-post.html</link>
+    <guid isPermaLink="true">https://jasontrost.github.io/essays/your-new-post.html</guid>
     <pubDate>Fri, 15 Nov 2024 12:00:00 GMT</pubDate>
     <author>jason@smarkets.com (Jason Trost)</author>
     <content:encoded><![CDATA[
@@ -62,7 +62,7 @@ Edit `rss.xml` and add your new post as the first `<item>` in the channel:
 
 ```bash
 git add .
-git commit -m "Add new blog post: Your Post Title"
+git commit -m "Add new essay post: Your Post Title"
 git push
 ```
 
@@ -94,13 +94,13 @@ git push
 
 ### URL Structure
 Keep URLs simple and SEO-friendly:
-- Good: `/blog/liquidity-is-everything.html`
-- Bad: `/blog/2024-11-14-my-thoughts-on-liquidity-in-markets.html`
+- Good: `/essays/liquidity-is-everything.html`
+- Bad: `/essays/2024-11-14-my-thoughts-on-liquidity-in-markets.html`
 
 ### Images
-Place images in the `/blog/images/` directory (create if needed):
+Place images in the `/essays/images/` directory (create if needed):
 ```html
-<img src="/blog/images/your-image.jpg" alt="Description" loading="lazy">
+<img src="/essays/images/your-image.jpg" alt="Description" loading="lazy">
 ```
 
 ### Code Examples
@@ -137,7 +137,7 @@ Use blockquotes for important callouts:
 
 ## Future Enhancements
 
-Consider these upgrades as your blog grows:
+Consider these upgrades as your essay grows:
 
 1. **Static Site Generator**: Migrate to 11ty or Hugo for easier management
 2. **Newsletter**: Add email subscription for new posts
