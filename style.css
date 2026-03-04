@@ -184,6 +184,10 @@ a:hover {
     margin-bottom: 0.8em;
 }
 
+.personal a {
+    text-decoration: underline;
+}
+
 .personal .personal-summary {
     margin-top: 1em;
 }
