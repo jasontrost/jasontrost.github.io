@@ -17,14 +17,16 @@
     </script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <div class="container">
-        <nav>
+        <nav aria-label="Main">
             <a href="/">Home</a>
             <a href="/about.html">About</a>
             <a href="/media.html">Media</a>
-            <a href="/essays/" class="active">Essays</a>
+            <a href="/essays/" aria-current="page">Essays</a>
         </nav>
 
+        <main id="main">
         <h1>Writing</h1>
 
         <div class="essay-intro">
@@ -42,7 +44,7 @@
                 <p>After building prediction markets for 18 years, I've learned one truth above all others: liquidity is everything.
                 Not technology, not UI, not even regulatory approval. Without liquidity, you're just running an empty casino.
                 Here's what I've learned about why most markets fail and how to build ones that survive.</p>
-                <a href="/essays/liquidity-is-everything.html" class="read-more">Read more →</a>
+                <a href="/essays/liquidity-is-everything.html" class="read-more" aria-label="Read more: Liquidity Is Everything">Read more →</a>
             </div>
         </article>
 
@@ -55,7 +57,7 @@
                 <p>2008, 2016, 2024. Each prediction market boom promises to revolutionize how we understand future events.
                 Each one has ended the same way. As someone who's been building through all three cycles,
                 let me tell you what's actually different this time—and what dangerously isn't.</p>
-                <a href="/essays/three-prediction-market-cycles.html" class="read-more">Read more →</a>
+                <a href="/essays/three-prediction-market-cycles.html" class="read-more" aria-label="Read more: Three Prediction Market Cycles">Read more →</a>
             </div>
         </article>
 
@@ -68,24 +70,25 @@
                 <p>Everyone wants to talk about election markets. The media loves them, Twitter obsesses over them,
                 and VCs throw money at them. But after processing billions in volume, I can tell you a secret:
                 political prediction markets are a loss leader. The real business is elsewhere.</p>
-                <a href="/essays/sports-vs-politics.html" class="read-more">Read more →</a>
+                <a href="/essays/sports-vs-politics.html" class="read-more" aria-label="Read more: Politics Gets Press, Sports Makes Money">Read more →</a>
             </div>
         </article>
+        </main>
 
         <footer class="site-footer">
             <div class="footer-links">
-                <a href="https://x.com/jasontrost" target="_blank">X</a>
-                <a href="https://github.com/jasontrost" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/jasontrost" target="_blank">LinkedIn</a>
-                <a href="https://smarkets.com" target="_blank">Smarkets</a>
+                <a href="https://x.com/jasontrost" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://github.com/jasontrost" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/jasontrost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://smarkets.com" target="_blank" rel="noopener noreferrer">Smarkets</a>
                 <a href="/essays/rss.xml">RSS</a>
             </div>
-            <div class="footer-pages">
+            <nav aria-label="Footer" class="footer-pages">
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
                 <a href="/media.html">Media</a>
                 <a href="/essays/">Essays</a>
-            </div>
+            </nav>
         </footer>
     </div>
 </body>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Selected Media Appearances - Jason Trost</title>
@@ -31,13 +31,15 @@
     </script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <div class="container">
-        <nav>
+        <nav aria-label="Main">
             <a href="/">Home</a>
             <a href="/about.html">About</a>
-            <a href="/media.html" class="active">Media</a>
+            <a href="/media.html" aria-current="page">Media</a>
         </nav>
 
+        <main id="main">
         <h1>Selected Media Appearances</h1>
         <p class="subtitle">Interviews, podcasts, and press coverage.</p>
 
@@ -46,14 +48,14 @@
             <div class="photo-container">
                 <img src="benzinga-2025.jpg" alt="Jason Trost speaking on a panel at Benzinga Fintech Day 2025 in New York City" class="photo" loading="lazy">
             </div>
-            <p style="text-align: center; color: #666; font-size: 0.9em; margin-top: 1em;">Benzinga Fintech Day 2025, New York City</p>
-            <div class="photo-container" style="margin-top: 2em;">
+            <p class="photo-caption">Benzinga Fintech Day 2025, New York City</p>
+            <div class="photo-container">
                 <img src="fia-expo-2025.jpg" alt="Jason Trost speaking on a panel at FIA Expo 2025 in Chicago" class="photo" loading="lazy">
             </div>
-            <p style="text-align: center; color: #666; font-size: 0.9em; margin-top: 1em;">Panel at FIA Expo 2025, Chicago</p>
-            <ul class="media-list" style="margin-top: 2em;">
+            <p class="photo-caption">Panel at FIA Expo 2025, Chicago</p>
+            <ul class="media-list media-list-spaced">
                 <li>
-                    <strong><a href="https://www.youtube.com/watch?v=qvHogdbHffM" target="_blank">Benzinga Fintech Day & Awards 2025</a></strong>
+                    <strong><a href="https://www.youtube.com/watch?v=qvHogdbHffM" target="_blank" rel="noopener noreferrer">Benzinga Fintech Day & Awards 2025</a></strong>
                     <span class="source">Panel: "Prediction Markets: The Everything Market." New York City, November 2025</span>
                 </li>
                 <li>
@@ -67,11 +69,11 @@
             <h2 class="section-title">Business of Betting Podcast</h2>
             <ul class="media-list">
                 <li>
-                    <strong><a href="https://podcasts.apple.com/us/podcast/business-of-betting-with-jason-trost/id1223927895" target="_blank">80+ episodes on the business side of betting, prediction markets, and exchanges</a></strong>
+                    <strong><a href="https://podcasts.apple.com/us/podcast/business-of-betting-with-jason-trost/id1223927895" target="_blank" rel="noopener noreferrer">80+ episodes on the business side of betting, prediction markets, and exchanges</a></strong>
                     <span class="source">Hosted by Jason Trost, 2022&ndash;2025</span>
                 </li>
                 <li>
-                    <strong><a href="https://www.youtube.com/watch?v=JT_7QqdL7GY" target="_blank">Featured Episode: Nigel Eccles</a></strong>
+                    <strong><a href="https://www.youtube.com/watch?v=JT_7QqdL7GY" target="_blank" rel="noopener noreferrer">Featured Episode: Nigel Eccles</a></strong>
                     <span class="source">FanDuel co-founder on UK vs US startups, raising funding, and the Flutter sale. December 2024</span>
                 </li>
             </ul>
@@ -81,11 +83,11 @@
             <h2 class="section-title">Podcasts</h2>
             <ul class="media-list">
                 <li>
-                    <strong><a href="https://podcasts.apple.com/ie/podcast/episode-80-should-u-s-sportsbooks-launch-betting-exchanges/id1704895140?i=1000714667614" target="_blank">Zero Latency: An Eilers & Krejcik Gaming Podcast</a></strong>
+                    <strong><a href="https://podcasts.apple.com/ie/podcast/episode-80-should-u-s-sportsbooks-launch-betting-exchanges/id1704895140?i=1000714667614" target="_blank" rel="noopener noreferrer">Zero Latency: An Eilers & Krejcik Gaming Podcast</a></strong>
                     <span class="source">Episode 80: Should U.S. sportsbooks launch betting exchanges? June 2025</span>
                 </li>
                 <li>
-                    <strong><a href="https://open.spotify.com/episode/1WBs7c8NtnMKEamzDzuxoq" target="_blank">The Smart Betting Club Podcast</a></strong>
+                    <strong><a href="https://open.spotify.com/episode/1WBs7c8NtnMKEamzDzuxoq" target="_blank" rel="noopener noreferrer">The Smart Betting Club Podcast</a></strong>
                     <span class="source">Episode 62: Smarkets, SBK, and competing with Betfair. September 2023</span>
                 </li>
             </ul>
@@ -95,28 +97,29 @@
             <h2 class="section-title">Press Coverage</h2>
             <ul class="media-list">
                 <li>
-                    <strong><a href="https://www.egr.global/intel/news/smarkets-overhauls-frontend-to-us-style-prediction-markets-interface/" target="_blank">Smarkets Overhauls Frontend to US-Style Prediction Markets Interface</a></strong>
+                    <strong><a href="https://www.egr.global/intel/news/smarkets-overhauls-frontend-to-us-style-prediction-markets-interface/" target="_blank" rel="noopener noreferrer">Smarkets Overhauls Frontend to US-Style Prediction Markets Interface</a></strong>
                     <span class="source">EGR Global, January 2026</span>
                 </li>
             </ul>
         </section>
 
         <section>
-            <p style="color: #666;">For media inquiries: <a href="mailto:jason+ws@smarkets.com">jason+ws@smarkets.com</a></p>
+            <p class="media-inquiry">For media inquiries: <a href="mailto:jason+ws@smarkets.com">jason+ws@smarkets.com</a></p>
         </section>
+        </main>
 
         <footer class="site-footer">
             <div class="footer-links">
-                <a href="https://x.com/jasontrost" target="_blank">X</a>
-                <a href="https://github.com/jasontrost" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/jasontrost" target="_blank">LinkedIn</a>
-                <a href="https://smarkets.com" target="_blank">Smarkets</a>
+                <a href="https://x.com/jasontrost" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://github.com/jasontrost" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/jasontrost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://smarkets.com" target="_blank" rel="noopener noreferrer">Smarkets</a>
             </div>
-            <div class="footer-pages">
+            <nav aria-label="Footer" class="footer-pages">
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
                 <a href="/media.html">Media</a>
-                            </div>
+            </nav>
         </footer>
     </div>
 </body>

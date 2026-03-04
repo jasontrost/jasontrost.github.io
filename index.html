@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Jason Trost - Founder & CEO, Smarkets</title>
@@ -31,13 +31,15 @@
     </script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <div class="container">
-        <nav>
-            <a href="/" class="active">Home</a>
+        <nav aria-label="Main">
+            <a href="/" aria-current="page">Home</a>
             <a href="/about.html">About</a>
             <a href="/media.html">Media</a>
         </nav>
 
+        <main id="main">
         <!-- Hero -->
         <header>
             <h1>Jason Trost</h1>
@@ -63,21 +65,9 @@
 
             <p>Took 7 years before we turned the corner. Required what I call "extreme hubris with extreme work ethic."</p>
 
-            <p>Today: <a href="https://smarkets.com" target="_blank">Smarkets</a> processes billions in annual volume. 1,000,000+ funded accounts. One of Europe's fastest-growing companies.</p>
+            <p>Today, <a href="https://smarkets.com" target="_blank" rel="noopener noreferrer">Smarkets</a> is one of the world's largest prediction markets. We've survived three hype cycles. This one feels different. Maybe.</p>
 
-            <p>We have survived three prediction market hype cycles. This one feels different. Maybe.</p>
-
-            <p><strong>I have learned many lessons from 18 years of building from failure and success:</strong></p>
-
-            <ul>
-                <li>Market design matters more than marketing</li>
-                <li>Liquidity is everything (we run our own trading desk to market make it)</li>
-                <li>2% commission beats 5% (we proved it against the incumbents)</li>
-                <li>Politics makes headlines. Sports makes money.</li>
-                <li>The US strategy? With hindsight, I screwed it up. Learning.</li>
-            </ul>
-
-            <p>The current prediction market boom makes me both excited and nervous. We've been here before.</p>
+            <p>The current prediction market boom makes me both excited and nervous. I've learned a lot about what works and what doesn't — mostly by getting it wrong first. Writing about those lessons <a href="/essays/">here</a>.</p>
         </section>
 
         <!-- Current Focus -->
@@ -85,13 +75,13 @@
             <h2 class="section-title">Current Focus</h2>
 
             <ul>
-                <li>Running <a href="https://smarkets.com" target="_blank">Smarkets</a> (still the day job)</li>
+                <li>Running Smarkets (still the day job)</li>
                 <li>Watching the fintech landscape with interest</li>
                 <li>Thinking about what trading will become in 10 years</li>
-                <li>Living in London. Building across US/UK.</li>
+                <li>Building across US/UK</li>
             </ul>
 
-            <p>Writing about prediction market mechanics, market design, liquidity, what we got wrong, what we got right, and what actually matters after 18 years.</p>
+            <p>Writing about prediction market mechanics, market design, and what actually matters after 18 years.</p>
         </section>
 
         <!-- Personal -->
@@ -101,22 +91,23 @@
             <p>Fluent-ish German and French.</p>
             <p>Aspirational sailor and pilot.</p>
             <p>Follow US politics too closely.</p>
-            <p>Favorite app: <a href="https://www.flightradar24.com" target="_blank">Flightradar24</a>.</p>
-            <p style="margin-top: 1em;"><strong>Based in London. Born in North Carolina. French on the weekends.</strong></p>
+            <p>Favorite app: <a href="https://www.flightradar24.com" target="_blank" rel="noopener noreferrer">Flightradar24</a>.</p>
+            <p class="personal-summary"><strong>Based in London. Born in North Carolina. French on the weekends.</strong></p>
         </section>
+        </main>
 
         <footer class="site-footer">
             <div class="footer-links">
-                <a href="https://x.com/jasontrost" target="_blank">X</a>
-                <a href="https://github.com/jasontrost" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/jasontrost" target="_blank">LinkedIn</a>
-                <a href="https://smarkets.com" target="_blank">Smarkets</a>
+                <a href="https://x.com/jasontrost" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://github.com/jasontrost" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/jasontrost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://smarkets.com" target="_blank" rel="noopener noreferrer">Smarkets</a>
             </div>
-            <div class="footer-pages">
+            <nav aria-label="Footer" class="footer-pages">
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
                 <a href="/media.html">Media</a>
-                            </div>
+            </nav>
         </footer>
     </div>
 </body>

@@ -24,14 +24,16 @@
     </script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <div class="container">
-        <nav>
+        <nav aria-label="Main">
             <a href="/">Home</a>
             <a href="/about.html">About</a>
             <a href="/media.html">Media</a>
-            <a href="/essays/" class="active">Essays</a>
+            <a href="/essays/" aria-current="page">Essays</a>
         </nav>
 
+        <main id="main">
         <article>
             <header class="post-header">
                 <h1 class="post-title">Liquidity Is Everything: Why Most Markets Fail</h1>
@@ -58,7 +60,7 @@
 
                 <p>Why? Because a trader looking to bet £10,000 on Liverpool doesn't care about your matching engine's microsecond latency. They care about one thing: can they get their bet matched at a fair price?</p>
 
-                <div class="callout">
+                <div class="callout" role="note">
                     <div class="callout-title">The Liquidity Death Spiral</div>
                     <p>No liquidity → Wide spreads → Poor user experience → Users leave → Less liquidity</p>
                     <p>Once this spiral starts, it's nearly impossible to reverse.</p>
@@ -70,10 +72,10 @@
 
                 <p>To bootstrap a market, you need market makers. Professional market makers aren't charities—they need to make money. That means either:</p>
 
-                <ol style="list-style-type: decimal; padding-left: 2em;">
-                    <li style="padding-left: 0.5em; margin-bottom: 0.8em;">You pay them directly (expensive)</li>
-                    <li style="padding-left: 0.5em; margin-bottom: 0.8em;">You give them advantages that retail traders don't get (unfair)</li>
-                    <li style="padding-left: 0.5em; margin-bottom: 0.8em;">You become the market maker yourself (risky)</li>
+                <ol>
+                    <li>You pay them directly (expensive)</li>
+                    <li>You give them advantages that retail traders don't get (unfair)</li>
+                    <li>You become the market maker yourself (risky)</li>
                 </ol>
 
                 <p>We tried all three. The first two didn't work—they created artificial markets that collapsed the moment support was withdrawn. The third option? That's where things got interesting.</p>
@@ -110,7 +112,7 @@
 
                 <h2>What Actually Works</h2>
 
-                <p>After 18 years and billions in volume, here's what actually creates sustainable liquidity:</p>
+                <p>Here's what actually creates sustainable liquidity:</p>
 
                 <h3>1. Start Narrow, Go Deep</h3>
                 <p>Pick one vertical and dominate it. We started with soccer, specifically Premier League. Not all sports. Not all soccer. Just Premier League. We had better prices and more liquidity on Arsenal vs. Chelsea than platforms 100x our size.</p>
@@ -122,7 +124,7 @@
                 <p>£100K of liquidity attracts traders who add £10K. £1M attracts traders who add £100K. £10M attracts traders who add £1M. But this only works if you concentrate it. Spread thin, liquidity evaporates.</p>
 
                 <h3>4. Time in Market Beats Timing the Market</h3>
-                <p>Liquidity builds slowly, then suddenly. Smarkets was a ghost town for seven years. Then something clicked. The liquidity we'd been slowly building hit critical mass. Network effects kicked in. Now we process billions.</p>
+                <p>Liquidity builds slowly, then suddenly. Smarkets was a ghost town for seven years. Then something clicked. The liquidity we'd been slowly building hit critical mass and network effects kicked in.</p>
 
                 <h2>The Next Wave</h2>
 
@@ -134,7 +136,7 @@
 
                 <p><strong>Liquidity is everything. Everything else is just noise.</strong></p>
 
-                <hr style="margin: 3em 0; border: none; border-top: 1px solid #e5e5e5;">
+                <hr>
 
                 <p><em>This is the first in a series on building prediction markets that last. Next: "Why Politics Gets Press but Sports Makes Money."</em></p>
             </div>
@@ -143,7 +145,7 @@
                 <div class="author-bio">
                     <div class="author-bio-text">
                         <h4>Jason Trost</h4>
-                        <p>Founder & CEO of Smarkets. Building prediction markets since 2008. Survived three boom-bust cycles and processing billions in volume annually.</p>
+                        <p>Founder & CEO of Smarkets. Building prediction markets since 2008.</p>
                     </div>
                 </div>
 
@@ -153,21 +155,22 @@
                 </div>
             </footer>
         </article>
+        </main>
 
         <footer class="site-footer">
             <div class="footer-links">
-                <a href="https://x.com/jasontrost" target="_blank">X</a>
-                <a href="https://github.com/jasontrost" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/jasontrost" target="_blank">LinkedIn</a>
-                <a href="https://smarkets.com" target="_blank">Smarkets</a>
+                <a href="https://x.com/jasontrost" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://github.com/jasontrost" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/jasontrost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://smarkets.com" target="_blank" rel="noopener noreferrer">Smarkets</a>
                 <a href="/essays/rss.xml">RSS</a>
             </div>
-            <div class="footer-pages">
+            <nav aria-label="Footer" class="footer-pages">
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
                 <a href="/media.html">Media</a>
                 <a href="/essays/">Essays</a>
-            </div>
+            </nav>
         </footer>
     </div>
 </body>

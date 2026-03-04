@@ -1,3 +1,21 @@
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    padding: 0.5em 1em;
+    background: #0066cc;
+    color: #fff;
+    z-index: 100;
+    font-size: 0.9em;
+}
+
+.skip-link:focus {
+    top: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
 /* Reset and base styles */
 * {
     margin: 0;
@@ -23,24 +41,24 @@ body {
 }
 
 /* Navigation */
-nav {
+nav[aria-label="Main"] {
     margin-bottom: 3em;
     padding-bottom: 1em;
     border-bottom: 1px solid #e5e5e5;
 }
 
-nav a {
+nav[aria-label="Main"] a {
     color: #666;
     text-decoration: none;
     margin-right: 1.5em;
     font-size: 0.95em;
 }
 
-nav a:hover {
+nav[aria-label="Main"] a:hover {
     color: #1a1a1a;
 }
 
-nav a.active {
+nav[aria-label="Main"] a[aria-current="page"] {
     color: #1a1a1a;
     font-weight: 500;
 }
@@ -152,32 +170,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.link-list {
-    margin-bottom: 1.5em;
-}
-
-.link-list a {
-    display: inline-block;
-    margin-right: 2em;
-    margin-bottom: 0.5em;
-    font-size: 0.95em;
-}
-
-/* Contact */
-.contact {
-    margin-top: 1em;
-    color: #666;
-    font-size: 0.95em;
-}
-
-.contact a {
-    color: #666;
-    text-decoration: underline;
-}
-
-.contact a:hover {
-    color: #1a1a1a;
-}
 
 /* Personal section */
 .personal {
@@ -192,10 +184,26 @@ a:hover {
     margin-bottom: 0.8em;
 }
 
+.personal .personal-summary {
+    margin-top: 1em;
+}
+
 /* Photo */
 .photo-container {
     margin: 3em 0 4em 0;
     text-align: center;
+}
+
+.photo-container + .photo-caption {
+    margin-top: -3em;
+}
+
+.photo-caption {
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 .photo {
@@ -267,26 +275,9 @@ a:hover {
     line-height: 1.7;
 }
 
-/* Speaking List */
-.speaking-list li {
-    padding-left: 0;
-    margin-bottom: 1.5em;
-}
 
-.speaking-list li:before {
-    display: none;
-}
-
-.speaking-list strong {
-    display: block;
-    color: #1a1a1a;
-    margin-bottom: 0.3em;
-}
-
-.speaking-list .description {
-    color: #666;
-    font-size: 0.95em;
-    font-style: italic;
+.media-list-spaced {
+    margin-top: 2em;
 }
 
 /* Media List */
@@ -310,6 +301,10 @@ a:hover {
     font-size: 0.95em;
 }
 
+.media-inquiry {
+    color: #666;
+}
+
 /* Resource Links */
 .resource-links {
     margin: 1.5em 0;
@@ -319,6 +314,10 @@ a:hover {
     color: #666;
     font-size: 0.95em;
     margin-bottom: 0.5em;
+}
+
+.resource-links p + p {
+    margin-top: 1em;
 }
 
 /* Contact Box */
@@ -333,6 +332,10 @@ a:hover {
 .contact-box p {
     margin-bottom: 0.5em;
     font-size: 0.95em;
+}
+
+.contact-box .spaced {
+    margin-top: 1em;
 }
 
 .contact-box p:last-child {
@@ -378,11 +381,6 @@ a:hover {
 .timeline-content {
     color: #333;
     font-size: 0.95em;
-}
-
-/* Emphasis */
-em {
-    font-style: italic;
 }
 
 strong {
@@ -506,6 +504,22 @@ span.highlight {
 
 .post-content p {
     margin-bottom: 1.5em;
+}
+
+.post-content ol {
+    list-style-type: decimal;
+    padding-left: 2em;
+}
+
+.post-content ol li {
+    padding-left: 0.5em;
+    margin-bottom: 0.8em;
+}
+
+.post-content hr {
+    margin: 3em 0;
+    border: none;
+    border-top: 1px solid #e5e5e5;
 }
 
 .post-content blockquote {
@@ -641,12 +655,6 @@ span.highlight {
         margin: 3em 0;
     }
 
-    .link-list a {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 0.8em;
-    }
-
     .bio-box {
         padding: 1.2em;
     }
@@ -661,12 +669,6 @@ span.highlight {
 
     .facts-grid {
         padding: 1.5em;
-    }
-
-    .resource-links a {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 0.8em;
     }
 
     /* Essay responsive */
