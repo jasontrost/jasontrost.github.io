@@ -54,6 +54,12 @@ nav[aria-label="Main"] a {
     font-size: 0.95em;
 }
 
+nav[aria-label="Main"] a:focus-visible {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
 nav[aria-label="Main"] a:hover {
     color: #1a1a1a;
 }
@@ -120,7 +126,7 @@ section:first-of-type {
     font-size: 0.85em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #717171;
+    color: #6d6d6d;
     margin-bottom: 1.5em;
     font-weight: 500;
 }
@@ -161,13 +167,19 @@ ul li:before {
 /* Links */
 a {
     color: #0066cc;
-    text-decoration: none;
+    text-decoration: underline;
     transition: color 0.2s ease;
 }
 
 a:hover {
     color: #0052a3;
-    text-decoration: underline;
+}
+
+/* Focus indicators */
+a:focus-visible {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+    border-radius: 2px;
 }
 
 
@@ -182,10 +194,6 @@ a:hover {
 
 .personal p {
     margin-bottom: 0.8em;
-}
-
-.personal a {
-    text-decoration: underline;
 }
 
 .personal .personal-summary {
@@ -425,7 +433,6 @@ span.highlight {
 
 .essay-post-title a:hover {
     color: #0066cc;
-    text-decoration: none;
 }
 
 .essay-post-meta {
@@ -612,6 +619,11 @@ span.highlight {
     text-decoration: underline;
 }
 
+.skip-link:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
 /* Site Footer */
 .site-footer {
     margin-top: 4em;
@@ -635,6 +647,7 @@ span.highlight {
 
 .site-footer a:hover {
     color: #0052a3;
+    text-decoration: underline;
 }
 
 /* Mobile responsive */
