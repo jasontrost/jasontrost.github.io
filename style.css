@@ -180,7 +180,7 @@ h3 {
     font-size: 0.78em;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: var(--accent);
+    color: var(--accent-hover);
     margin-bottom: 1.6em;
     font-weight: 500;
 }
@@ -304,13 +304,16 @@ ul li::before {
     color: var(--text);
 }
 
-.personal li::before,
-.personal a {
+.personal li::before {
     color: var(--accent-pink);
 }
 
+.personal a {
+    color: var(--accent-hover);
+}
+
 .personal a:hover {
-    text-decoration-color: var(--accent-pink);
+    text-decoration-color: var(--accent-hover);
 }
 
 /* --- Photo --- */
