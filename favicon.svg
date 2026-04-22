@@ -1,18 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- Black background with rounded corners -->
-  <rect width="32" height="32" fill="#000000" rx="4"/>
+  <!-- Warm navy background -->
+  <rect width="32" height="32" fill="#1B2A4A" rx="5"/>
 
-  <!-- JT in elegant serif style -->
-  <g fill="#ffffff">
-    <!-- J letter with serif and curve -->
-    <path d="M 14 8 L 14 20 C 14 22 13 23 11 23 C 9 23 8 22 8 20 L 8 19 L 10 19 L 10 20 C 10 21 10.5 21.5 11 21.5 C 11.5 21.5 12 21 12 20 L 12 8 Z"/>
-    <!-- J top serif -->
-    <rect x="11" y="8" width="5" height="1.5"/>
-
-    <!-- T letter with serif -->
-    <rect x="16" y="8" width="8" height="1.5"/>
-    <rect x="19" y="8" width="2" height="15"/>
-    <!-- T bottom serifs -->
-    <rect x="17" y="21.5" width="6" height="1.5"/>
+  <!-- JT in Cormorant Bold (700), cream -->
+  <!-- J bbox (font units, y-up): x[-57,301] y[-242,625]; descender goes below baseline -->
+  <!-- T bbox (font units, y-up): x[40,606] y[0,654]; cap-height only, no descender -->
+  <g fill="#F8F5F0">
+    <g transform="translate(6.5 3.5) scale(0.021)">
+      <!-- J -->
+      <path d="M298 175q3 0 3 6t-3 6q-25 0 -38 6t-17 21t-4 44v546q0 112 -55.5 175t-154.5 63q-37 0 -61.5 -15.5t-24.5 -44.5q0 -18 12 -34.5t40 -16.5q24 0 37 13.5t20.5 31.5t14 31.5t18.5 13.5q21 0 31 -33.5t10 -113.5v-618q0 -29 -6 -43.5t-24 -20t-54 -5.5q-2 0 -2 -6t2 -6q31 0 66 1.5t73 1.5q35 0 64.5 -1.5t52.5 -1.5z"/>
+    </g>
+    <g transform="translate(13.5 3.5) scale(0.021)">
+      <!-- T -->
+      <path d="M222 198q-61 0 -103.5 40.5t-67.5 114.5q-1 3 -6 2.5t-5 -3.5q2 -14 4 -39.5t4.5 -55.5t4 -58t1.5 -46q0 -5 5.5 -5t5.5 5q0 10 10.5 14.5t24 6t22.5 1.5q86 3 201 3q70 0 112 -1.5t81 -1.5q36 0 54.5 -4.5t23.5 -20.5q1 -4 6.5 -4t5.5 4q-2 16 -3.5 44.5t-3 60t-2.5 58t-1 39.5q0 3 -5 3t-6 -3q-15 -79 -56.5 -116.5t-100.5 -37.5q-20 0 -30.5 5.5t-14 18.5t-3.5 36v461q0 29 6 44t23.5 20t53.5 5q3 0 3 6t-3 6q-28 0 -63 -1t-77 -1q-40 0 -75 1t-64 1q-3 0 -3 -6t3 -6q35 0 53 -5t24.5 -20t6.5 -44v-463q0 -22 -3.5 -34.5t-13.5 -18t-29 -5.5z"/>
+    </g>
   </g>
+
+  <!-- Burnt orange underline — same color as top-nav hover -->
+  <rect x="5.5" y="28" width="21" height="0.8" rx="0.4" fill="#C2724E"/>
 </svg>
