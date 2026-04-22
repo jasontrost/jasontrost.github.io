@@ -10,7 +10,7 @@
     --text:           #1B2A4A;
     --text-secondary: #5D6A7E;
     --accent:         #C2724E;
-    --accent-hover:   #A85C3A;
+    --accent-hover:   #944C2E;
     --accent-pink:    #C9908D;
     --border:         #DDD8CE;
     --border-light:   #E8E3DA;
@@ -618,15 +618,14 @@ span.highlight {
     margin-top: 0.8em;
     font-weight: 500;
     font-size: 0.9em;
-    color: var(--accent);
+    color: var(--accent-hover);
     text-decoration: none;
     letter-spacing: 0.02em;
 }
 
 .read-more:hover {
     text-decoration: underline;
-    text-decoration-color: var(--accent);
-    color: var(--accent-hover);
+    text-decoration-color: var(--accent-hover);
 }
 
 /* Essay Post */
@@ -783,7 +782,7 @@ span.highlight {
     margin-bottom: 2em;
 }
 
-.author-bio-text h4 {
+.author-bio-text h3 {
     font-family: var(--font-heading);
     font-size: 1.15em;
     margin-bottom: 0.3em;
