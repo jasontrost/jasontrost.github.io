@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Jason Trost - Notes</title>
+        <description>Shorter pieces on prediction markets, talks, and things seen up close.</description>
+        <link>https://jasontrost.com/notes/</link>
+        <atom:link href="https://jasontrost.com/notes/rss.xml" rel="self" type="application/rss+xml"/>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 22 Apr 2026 12:00:00 GMT</lastBuildDate>
+        <pubDate>Wed, 22 Apr 2026 12:00:00 GMT</pubDate>
+
+        <item>
+            <title>Notes from the Audience at Semafor World Economy 2026</title>
+            <description>Three people I watched from the audience at Semafor World Economy 2026: Gianni Infantino, John Kerry, and Steve Bannon.</description>
+            <link>https://jasontrost.com/notes/semafor-world-economy-2026-audience.html</link>
+            <guid isPermaLink="true">https://jasontrost.com/notes/semafor-world-economy-2026-audience.html</guid>
+            <pubDate>Wed, 22 Apr 2026 14:00:00 GMT</pubDate>
+            <author>jason@smarkets.com (Jason Trost)</author>
+            <content:encoded><![CDATA[
+                <p>Three days at Semafor World Economy 2026 in Washington, DC last week. I spoke on one panel; mostly I was there to listen.</p>
+
+                <p>Three people I watched from the audience I'm still thinking about: Gianni Infantino on FIFA's dynamic ticket pricing, John Kerry in a business register rather than a political one, and Steve Bannon in full conviction.</p>
+
+                <p><a href="https://jasontrost.com/notes/semafor-world-economy-2026-audience.html">Read the full notes</a></p>
+            ]]></content:encoded>
+        </item>
+
+        <item>
+            <title>Notes from Semafor World Economy 2026</title>
+            <description>Notes from my panel at Semafor World Economy 2026 on prediction markets, mention contracts, and why the industry needs an adult in the room.</description>
+            <link>https://jasontrost.com/notes/semafor-world-economy-2026.html</link>
+            <guid isPermaLink="true">https://jasontrost.com/notes/semafor-world-economy-2026.html</guid>
+            <pubDate>Tue, 21 Apr 2026 12:00:00 GMT</pubDate>
+            <author>jason@smarkets.com (Jason Trost)</author>
+            <content:encoded><![CDATA[
+                <p>Last week I sat on a panel called "The Next Era of Innovation" at Semafor World Economy 2026 in Washington, DC. Yinka Adegoke interviewed me about Smarkets and prediction markets.</p>
+
+                <p>A few things I said that I want to write down: on whether prediction markets are gambling, on sensitive mention contracts, on where the business actually is, and on prediction markets as news infrastructure.</p>
+
+                <p><a href="https://jasontrost.com/notes/semafor-world-economy-2026.html">Read the full notes</a></p>
+            ]]></content:encoded>
+        </item>
+    </channel>
+</rss>

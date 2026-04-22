@@ -2,11 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://jasontrost.com/</loc>
+        <lastmod>2026-04-22</lastmod>
     </url>
     <url>
         <loc>https://jasontrost.com/about.html</loc>
+        <lastmod>2026-04-22</lastmod>
     </url>
     <url>
         <loc>https://jasontrost.com/media.html</loc>
+        <lastmod>2026-04-22</lastmod>
+    </url>
+    <url>
+        <loc>https://jasontrost.com/notes/</loc>
+        <lastmod>2026-04-22</lastmod>
+    </url>
+    <url>
+        <loc>https://jasontrost.com/notes/semafor-world-economy-2026.html</loc>
+        <lastmod>2026-04-21</lastmod>
+    </url>
+    <url>
+        <loc>https://jasontrost.com/notes/semafor-world-economy-2026-audience.html</loc>
+        <lastmod>2026-04-22</lastmod>
     </url>
 </urlset>
