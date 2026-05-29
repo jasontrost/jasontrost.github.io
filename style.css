@@ -314,10 +314,6 @@ ul li::before {
     color: var(--text);
 }
 
-.personal li::before {
-    color: var(--accent-pink);
-}
-
 .personal a {
     color: var(--accent-hover);
 }
