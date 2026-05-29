@@ -1,19 +1,32 @@
-# Jason Trost Personal Website
+# jasontrost.com
 
-This is the source code for jasontrost.com, hosted on GitHub Pages.
+Source for [jasontrost.com](https://jasontrost.com), a static personal site hosted on GitHub Pages.
 
-## Setup Instructions
+## Structure
 
-1. Create a new repository on GitHub named `jasontrost.github.io`
-2. Run the following command to add the remote:
-   ```bash
-   git remote add origin https://github.com/jasontrost/jasontrost.github.io.git
-   ```
-3. Push the code:
-   ```bash
-   git push -u origin main
-   ```
+- `index.html`, `about.html`, `media.html` — main pages
+- `notes/` — notes index, posts, and RSS feed (`notes/rss.xml`)
+- `style.css` — all styling
+- `sitemap.xml`, `robots.txt`, `CNAME` — SEO and custom-domain config
+- Images live at the repo root and in `notes/images/`
 
-## Local Development
+## Local development
 
-Simply open `index.html` in your browser to preview the site locally.
+No build step. Open `index.html` directly in a browser, or serve the directory:
+
+```bash
+python3 -m http.server 8000   # then visit http://localhost:8000
+```
+
+A local server is closer to production since it resolves root-relative paths (`/style.css`, `/about.html`) the way GitHub Pages does.
+
+## Deployment
+
+Pushing to `main` deploys automatically via GitHub Pages. The site is served at the custom domain in `CNAME`.
+
+## Adding a note
+
+1. Create `notes/<slug>.html` (copy an existing post for the page structure and meta tags).
+2. Add a card linking to it in `notes/index.html`.
+3. Add an `<item>` to `notes/rss.xml`.
+4. Add a `<url>` entry to `sitemap.xml`.
