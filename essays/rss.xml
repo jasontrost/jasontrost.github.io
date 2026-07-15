@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Jason Trost - Essays (moved)</title>
+        <description>This feed has moved. Subscribe to https://jasontrost.com/notes/rss.xml instead.</description>
+        <link>https://jasontrost.com/notes/</link>
+        <atom:link href="https://jasontrost.com/essays/rss.xml" rel="self" type="application/rss+xml"/>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 15 Jul 2026 12:00:00 GMT</lastBuildDate>
+
+        <item>
+            <title>This feed has moved</title>
+            <description>Essays are now published as Notes. Update your subscription to https://jasontrost.com/notes/rss.xml to keep receiving new posts.</description>
+            <link>https://jasontrost.com/notes/</link>
+            <guid isPermaLink="false">essays-feed-moved-to-notes</guid>
+            <pubDate>Wed, 15 Jul 2026 12:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

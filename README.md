@@ -12,13 +12,11 @@ Source for [jasontrost.com](https://jasontrost.com), a static personal site host
 
 ## Local development
 
-No build step. Open `index.html` directly in a browser, or serve the directory:
+No build step, but the site uses root-relative paths (`/style.css`, `/about.html`), so opening files directly via `file://` renders unstyled. Serve the directory instead:
 
 ```bash
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
-
-A local server is closer to production since it resolves root-relative paths (`/style.css`, `/about.html`) the way GitHub Pages does.
 
 ## Deployment
 
