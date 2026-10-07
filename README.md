@@ -7,6 +7,7 @@ Source for [jasontrost.com](https://jasontrost.com), a static personal site host
 - `index.html`, `about.html`, `media.html` — main pages
 - `notes/` — notes index, posts, and RSS feed (`notes/rss.xml`)
 - `style.css` — all styling
+- `fonts/` — self-hosted woff2 fonts (Cormorant, Hanken Grotesk)
 - `sitemap.xml`, `robots.txt`, `CNAME` — SEO and custom-domain config
 - Images live at the repo root and in `notes/images/`
 

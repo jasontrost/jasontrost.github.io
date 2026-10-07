@@ -4,6 +4,34 @@
    ========================================================================== */
 
 /* --- Custom Properties --- */
+/* --- Fonts (self-hosted, latin subset, variable weight) --- */
+@font-face {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url('/fonts/cormorant.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    font-style: italic;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url('/fonts/cormorant-italic.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/fonts/hanken-grotesk.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
     --bg:             #F8F5F0;
     --bg-subtle:      #F0EDE6;
@@ -18,7 +46,6 @@
     --font-body:    'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
 
     --measure:      720px;
-    --measure-narrow: 620px;
     --gutter:       clamp(24px, 5vw, 48px);
 }
 
@@ -564,11 +591,11 @@ span.highlight {
 }
 
 /* ==========================================================================
-   Essays
+   Notes
    ========================================================================== */
 
-/* Essay Index */
-.essay-intro {
+/* Notes Index */
+.note-intro {
     font-size: 1.05em;
     color: var(--text-secondary);
     line-height: 1.7;
@@ -577,17 +604,17 @@ span.highlight {
     border-bottom: 1px solid var(--border-light);
 }
 
-.essay-post {
+.note-post {
     margin-bottom: 3em;
     padding-bottom: 2.5em;
     border-bottom: 1px solid var(--border-light);
 }
 
-.essay-post:last-child {
+.note-post:last-child {
     border-bottom: none;
 }
 
-.essay-post-title {
+.note-post-title {
     font-family: var(--font-heading);
     font-size: 1.7em;
     font-weight: 600;
@@ -595,24 +622,24 @@ span.highlight {
     margin-bottom: 0.3em;
 }
 
-.essay-post-title a {
+.note-post-title a {
     color: var(--text);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.essay-post-title a:hover {
+.note-post-title a:hover {
     color: var(--accent);
 }
 
-.essay-post-meta {
+.note-post-meta {
     font-size: 0.85em;
     color: var(--text-secondary);
     margin-bottom: 1em;
     letter-spacing: 0.02em;
 }
 
-.essay-post-excerpt {
+.note-post-excerpt {
     color: var(--text-secondary);
     line-height: 1.7;
     font-size: 0.96em;
@@ -633,7 +660,7 @@ span.highlight {
     text-decoration-color: var(--accent-hover);
 }
 
-/* Essay Post */
+/* Note Post */
 .post-header {
     margin-bottom: 2.5em;
     padding-bottom: 2em;
@@ -917,7 +944,7 @@ span.highlight {
         padding: 1.2em 1.4em;
     }
 
-    /* Essay responsive */
+    /* Notes responsive */
     .post-title {
         font-size: 1.8em;
     }
