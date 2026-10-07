@@ -23,6 +23,10 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 
 Pushing to `main` deploys automatically via GitHub Pages. The site is served at the custom domain in `CNAME`.
 
+## Caching
+
+The site sits behind Cloudflare, which caches `style.css` for four hours. Every page links the stylesheet with a version query (`/style.css?v=YYYYMMDD`). Bump that value on all pages whenever you change the CSS, or the live site will serve the old styles until the cache expires.
+
 ## Adding a note
 
 1. Create `notes/<slug>.html` (copy an existing post for the page structure and meta tags).
